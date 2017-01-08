@@ -26,7 +26,7 @@ test: test.o $(LIB)
 	$(CC) -o $@ $^ $(LDFLAGS) -led25519
 
 install: $(LIB)
-	install -d $(DESTDIR) $(DESTDIR)/$(LIB_DIR)/$(LIB) $(DESTDIR)/$(INC_DIR) $(DESTDIR)/$(DOC_DIR)
+	install -d $(DESTDIR) $(DESTDIR)/$(LIB_DIR) $(DESTDIR)/$(INC_DIR) $(DESTDIR)/$(DOC_DIR)
 	install -m 644 $(LIB) $(DESTDIR)/$(LIB_DIR)/$(LIB)
 	install -m 644 src/ed25519.h $(DESTDIR)/$(INC_DIR)/ed25519.h
 
