@@ -33,5 +33,5 @@ install: $(LIB)
 clean:
 	rm -f test test.o $(LIB) $(OBJS)
 
-runtest:
+runtest: test
 	./test
